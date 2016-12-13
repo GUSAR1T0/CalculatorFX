@@ -1,0 +1,145 @@
+.background {
+    -fx-background-color: #2f2c30;
+}
+
+.header {
+    -fx-font-size: 3.5em;
+    -fx-text-fill: white;
+}
+
+.item-title {
+    -fx-font-size: 1em;
+    -fx-text-fill: white;
+    -fx-opacity: 0.6;
+}
+
+@font-face {
+    src: url("/assets/fonts/PFSquareSansPro-Regular.ttf");
+}
+
+.label {
+    -fx-font-family: "PF Square Sans Pro";
+    -fx-font-size: 24px;
+    -fx-text-fill: #fbfbf9;
+}
+
+/*******************************************************************************
+ *                                                                             *
+ * Push Button                                                                 *
+ *                                                                             *
+ ******************************************************************************/
+
+.button {
+    -fx-padding: 5 22 5 22;
+    -fx-border-color: #e2e2e2;
+    -fx-border-width: 2;
+    -fx-background-radius: 0;
+    -fx-background-color: #2f2c30;
+    -fx-font-family: "PF Square Sans Pro";
+    -fx-font-size: 24px;
+    -fx-text-fill: #fbfbf9;
+}
+
+.button:hover {
+    -fx-background-color: #4a4a4a;
+}
+
+.button:pressed, .button:default:hover:pressed {
+    -fx-background-color: white;
+    -fx-font-family: "PF Square Sans Pro";
+    -fx-font-size: 24px;
+    -fx-text-fill: #2f2c30;
+}
+
+.button:focused {
+    -fx-border-color: white, white;
+    -fx-border-width: 1, 1;
+    -fx-border-style: solid, segments(1, 1);
+    -fx-border-radius: 0, 0;
+    -fx-border-insets: 1 1 1 1, 0;
+}
+
+.button:disabled, .button:default:disabled {
+    -fx-opacity: 0.4;
+    -fx-background-color: #2f2c30;
+    -fx-font-family: "PF Square Sans Pro";
+    -fx-font-size: 24px;
+    -fx-text-fill: white;
+}
+
+.button:default {
+    -fx-background-color: #008287;
+    -fx-font-family: "PF Square Sans Pro";
+    -fx-font-size: 24px;
+    -fx-text-fill: #ffffff;
+}
+
+.button:default:hover {
+    -fx-background-color: #219297;
+}
+
+/*******************************************************************************
+ *                                                                             *
+ * TextField                                                                   *
+ *                                                                             *
+ ******************************************************************************/
+
+.text-input {
+    -fx-background-radius: 0, 0;
+    -fx-background-color: #d2d2d2;
+    -fx-background-insets: 0;
+    -fx-prompt-text-fill: #818181;
+    -fx-highlight-fill: #008287;
+    -fx-font-family: "PF Square Sans Pro";
+    -fx-font-size: 50px;
+    -fx-highlight-text-fill: white;
+}
+
+.text-input:hover {
+    -fx-background-color: #e2e2e2;
+}
+
+.text-input:focused {
+    -fx-background-color: #5c5c5c, white;
+    -fx-font-family: "PF Square Sans Pro";
+    -fx-font-size: 50px;
+    -fx-text-fill: black;
+}
+
+.text-input > .right-button {
+    -fx-cursor: default;
+    -fx-background-insets: -0.1666665em -0.45em -0.1666665em -0.45em; /* 4 7 4 7 -> this values are subtracted by 2px in em because of the border of the textfield */
+}
+
+.text-field > .right-button > .right-button-graphic {
+    -fx-shape: "M221.738,305.873l6.135,6.16l-2.875,2.863l-6.135-6.159l-6.263,6.237l-2.864-2.875l6.263-6.238l-6.177-6.202l2.875-2.863l6.177,6.201l6.244-6.22l2.864,2.876L221.738,305.873z";
+    -fx-padding: 0.5em 0.5em;
+    -fx-background-color: black;
+}
+
+.text-input > .right-button:hover {
+    -fx-background-color: #dedede;
+}
+
+.text-input > .right-button:pressed {
+    -fx-background-color: black;
+}
+
+.text-input > .right-button:pressed > .right-button-graphic {
+    -fx-background-color: white;
+}
+
+.text-input:disabled {
+    -fx-opacity: 1;
+    -fx-background-insets: 0, 2;
+    -fx-background-color: #777777, #2f2c30;
+    -fx-font-family: "PF Square Sans Pro";
+    -fx-font-size: 50px;
+    -fx-text-fill: #fbfbf9;
+}
+
+.item-title.disabled {
+    -fx-font-family: "PF Square Sans Pro";
+    -fx-font-size: 50px;
+    -fx-text-fill: #939393;
+}

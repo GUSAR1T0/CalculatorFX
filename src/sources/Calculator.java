@@ -1,4 +1,4 @@
-package sample;
+package sources;
 
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
@@ -42,6 +42,8 @@ class Calculator {
 
     private VBox createStage() {
         VBox stage = new VBox();
+        stage.getStylesheets().add("file:src/assets/styles.css");
+        stage.getStyleClass().add("background");
 
         line = new TextField();
         line.setPrefHeight(200);
@@ -72,7 +74,7 @@ class Calculator {
                 new Button("cos"),          //18
                 new Button("tan"),          //19
                 new Button("cat"),          //20
-                new Button("√x"),          //21
+                new Button("√x"),           //21
                 new Button("x²"),           //22
                 new Button("x³"),           //23
                 new Button("eˣ"),           //24
@@ -322,12 +324,4 @@ class Calculator {
         minusUsed = value < 0;
         commaUsed = !(value % 1 == 0);
     }
-
-//    private void printStatesOfVariables() {
-//        System.out.println();
-//        System.out.println("Comma: " + commaUsed);
-//        System.out.println("Minus: " + minusUsed);
-//        System.out.println("Action: " + operation);
-//        System.out.println("Wait operation: " + waitAction);
-//    }
 }
